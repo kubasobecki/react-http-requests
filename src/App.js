@@ -37,10 +37,9 @@ function App() {
         setIsLoading(false);
     };
 
-    let content = <p>Loading</p>;
+    let content = <p>No movies found</p>;
 
     if (movies.length > 0) content = <MoviesList movies={movies} />;
-    else content = <p>No movies found</p>;
     if (error) content = <p>{error}</p>;
     if (isLoading) content = <p>Loading data...</p>;
 
